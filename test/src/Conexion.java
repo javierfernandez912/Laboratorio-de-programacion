@@ -21,4 +21,12 @@ public class Conexion {
 		if (conexion!=null)
 			conexion.close();
 	}
+
+	public static void main(String[] args) {
+		try{
+			conectar();
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+	}
 }
