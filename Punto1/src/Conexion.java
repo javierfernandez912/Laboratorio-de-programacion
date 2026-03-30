@@ -1,5 +1,3 @@
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -20,13 +18,5 @@ public class Conexion {
 	public static void cerrar() throws  SQLException{
 		if (conexion!=null)
 			conexion.close();
-	}
-
-	public static void main(String[] args) {
-		try{
-			conectar();
-		}catch(SQLException e){
-			e.printStackTrace();
-		}
 	}
 }
