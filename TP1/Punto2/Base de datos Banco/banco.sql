@@ -30,7 +30,7 @@ INSERT INTO CUENTAS (cuenta, nombre_cliente, saldo, tipo_cuenta) VALUES
 (NULL, 'Laura Ramirez', 45000.00, 'A');
 
 INSERT INTO MOVIMIENTOS (cuenta, mov, importe) VALUES
--- Cuenta 1 (Juan Perez) → saldo 125000
+-- Cuenta 1 (Juan Perez)
 (1, 'E', 1500.00),
 (1, 'D', 25000.00),
 
