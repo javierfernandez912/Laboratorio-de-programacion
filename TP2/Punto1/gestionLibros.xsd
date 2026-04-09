@@ -25,14 +25,14 @@
               <xs:element name="titulo" type="cincuentaCaracteres"></xs:element>
               <xs:element name="autor" type="treintaCaracteres"></xs:element>
               <xs:element name="editorial" type="treintaCaracteres"></xs:element>
-              <xs:element name="año_edicion" type="año"></xs:element>
+              <xs:element name="año_edicion" type="tipo_anio"></xs:element>
               <xs:element name="genero_id" type="xs:integer"></xs:element>
             </xs:sequence>
 
             <xs:attribute name="id" use="required">
               <xs:simpleType>
                 <xs:restriction base="xs:integer">
-                  <xs:pattern value="[0-9]{1,5}"/>
+                  <xs:pattern value="[0-9]{1,5}" />
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
@@ -43,7 +43,8 @@
   </xs:element>
 
 
-  <xs:simpleType name="cincuentaCaracteres"> <!-- Tipo para restringir el titulo en 50 caracteres maximo-->
+  <xs:simpleType name="cincuentaCaracteres"> <!-- Tipo para restringir el titulo en 50 caracteres
+    maximo-->
     <xs:restriction base="xs:string">
       <xs:maxLength value="50" />
     </xs:restriction>
@@ -61,9 +62,10 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="año">
+  <xs:simpleType name="tipo_anio">
     <xs:restriction base="xs:integer">
-      <xs:pattern value="[0-9] {1,4}"></xs:pattern>
+      <xs:minInclusive value="1000" />
+      <xs:maxInclusive value="2026" />
     </xs:restriction>
   </xs:simpleType>
 
