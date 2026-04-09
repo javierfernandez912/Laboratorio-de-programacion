@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="gestionLibros.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<gestionLibros>
+
+    <generos id="112">
+        <nombre>messi</nombre>
+    </generos>
+
+    <generos id="113">
+        <nombre>messiasdasd</nombre>
+    </generos>
+
+    <generos id="1212">
+        <nombre>messiasdasd</nombre>
+    </generos>
+
+    <librosdig id="23">
+        <titulo>"dasdasd"</titulo>
+        <autor>hola</autor>
+        <editorial>si</editorial>
+        <año_edicion>1231</año_edicion>
+        <genero_id>12</genero_id>
+    </librosdig>
+</gestionLibros>

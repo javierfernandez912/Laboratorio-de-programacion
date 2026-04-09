@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universidad>
+ <nombre>Universidad Nacional de la Patagonia Austral</nombre>
+ <pais>Argentina</pais>
+ <!-- agregar al menos 2 etiquetas mas-->
+<!-- CARRERAS -->
+ <carreras>
+<!-- ASIGNATURAS -->
+ <asignaturas>
+<!-- ALUMNOS -->
+ <alumnos>
+</universidad>

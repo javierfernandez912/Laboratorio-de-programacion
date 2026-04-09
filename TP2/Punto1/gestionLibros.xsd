@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="gestionLibros">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="generos" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="veinteCaracteres"></xs:element>
+            </xs:sequence>
+
+            <xs:attribute name="id" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:pattern value="[0-9]{1,5}"></xs:pattern>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="librosdig" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="cincuentaCaracteres"></xs:element>
+              <xs:element name="autor" type="treintaCaracteres"></xs:element>
+              <xs:element name="editorial" type="treintaCaracteres"></xs:element>
+              <xs:element name="año_edicion" type="año"></xs:element>
+              <xs:element name="genero_id" type="xs:integer"></xs:element>
+            </xs:sequence>
+
+            <xs:attribute name="id" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:pattern value="[0-9]{1,5}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:simpleType name="cincuentaCaracteres"> <!-- Tipo para restringir el titulo en 50 caracteres maximo-->
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="treintaCaracteres">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="veinteCaracteres">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="año">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9] {1,4}"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+</xs:schema>
