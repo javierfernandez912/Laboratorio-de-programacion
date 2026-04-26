@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Universidad.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <universidad>
- <nombre>Universidad Nacional de la Patagonia Austral</nombre>
- <pais>Argentina</pais>
- <!-- agregar al menos 2 etiquetas mas-->
-<!-- CARRERAS -->
- <carreras>
-<!-- ASIGNATURAS -->
- <asignaturas>
-<!-- ALUMNOS -->
- <alumnos>
+    <nombre>Universidad Nacional de la Patagonia Austral</nombre>
+    <pais>Argentina</pais>
+    <provincia>Santa Cruz</provincia>
+    <ciudad>Río Gallegos</ciudad>
+
+    <carreras>
+        <carrera id="101">
+            <nombre>Analista de Sistemas</nombre>
+            <duracion>3 años</duracion>
+            <cantidadHoras>1800</cantidadHoras>
+            <materias>25</materias>
+        </carrera>
+    </carreras>
+
+    <asignaturas>
+        <asignatura id="1001" codigoCarrera="101">
+            <nombre>Programación Orientada a Objetos</nombre>
+            <añoCarrera>2</añoCarrera>
+            <cuatrimestre>1er</cuatrimestre>
+            <totalHorasTeoricas>40</totalHorasTeoricas>
+            <totalHorasPracticas>40</totalHorasPracticas>
+        </asignatura>
+    </asignaturas>
+
+    <alumnos>
+        <alumno id="12345">
+            <apellido>Perez</apellido>
+            <nombre>Juan</nombre>
+            <sexo>Masculino</sexo>
+            <estudios>
+                <carrera codigo="101"/>
+                <asignaturas>
+                    <asignatura codigo="1001"/>
+                </asignaturas>
+            </estudios>
+        </alumno>
+    </alumnos>
 </universidad>

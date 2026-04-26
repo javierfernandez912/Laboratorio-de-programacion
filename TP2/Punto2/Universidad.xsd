@@ -1,0 +1,151 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="universidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="pais" type="xs:string"/>
+                <xs:element name="provincia" type="xs:string"/>
+                <xs:element name="ciudad" type="xs:string"/>
+
+                <xs:element name="carreras">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="carrera" maxOccurs="unbounded">                                <!-- carreras-->
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="duracion" type="xs:string"/>
+                                        <xs:element name="cantidadHoras" type="xs:integer"/>
+                                        <xs:element name="materias" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:pattern value="[0-9]{3}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="asignaturas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="asignatura" maxOccurs="unbounded">                                <!-- asignaturas-->
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="añoCarrera" type="xs:integer"/>
+                                        <xs:element name="cuatrimestre">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="1er"/>
+                                                    <xs:enumeration value="2do"/>
+                                                    <xs:enumeration value="Anual"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="totalHorasTeoricas" type="xs:integer"/>
+                                        <xs:element name="totalHorasPracticas" type="xs:integer"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:pattern value="[0-9]{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="codigoCarrera" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="alumnos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="alumno" maxOccurs="unbounded">                                <!-- alumnos-->
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="apellido" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="sexo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Masculino"/>
+                                                    <xs:enumeration value="Femenino"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="estudios">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="carrera">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="codigo" type="xs:integer" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="asignaturas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="asignatura" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="codigo" type="xs:integer" use="required"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:pattern value="[0-9]{5}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+        <!--foreign keys-->
+        <xs:key name="PK_Carrera">
+            <xs:selector xpath="carreras/carrera" />
+            <xs:field xpath="@id" />
+        </xs:key>
+
+        <xs:key name="PK_Asignatura">
+            <xs:selector xpath="asignaturas/asignatura" />
+            <xs:field xpath="@id" />
+        </xs:key>
+
+        <xs:keyref name="FK_Asignatura_Carrera" refer="PK_Carrera">
+            <xs:selector xpath="asignaturas/asignatura" />
+            <xs:field xpath="@codigoCarrera" />
+        </xs:keyref>
+
+        <xs:keyref name="FK_Alumno_Carrera" refer="PK_Carrera">
+            <xs:selector xpath="alumnos/alumno/estudios/carrera" />
+            <xs:field xpath="@codigo" />
+        </xs:keyref>
+
+        <xs:keyref name="FK_Alumno_Materia" refer="PK_Asignatura">
+            <xs:selector xpath="alumnos/alumno/estudios/asignaturas/asignatura" />
+            <xs:field xpath="@codigo" />
+        </xs:keyref>
+
+
+    </xs:element>
+</xs:schema>

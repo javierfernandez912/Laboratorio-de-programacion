@@ -27,7 +27,6 @@
               <xs:element name="editorial" type="treintaCaracteres"></xs:element>
               <xs:element name="año_edicion" type="tipo_anio"></xs:element>
               <xs:element name="genero_id" type="xs:integer"></xs:element>
-
             </xs:sequence>
 
             <xs:attribute name="id" use="required">
@@ -58,7 +57,8 @@
   </xs:element>
 
 
-  <xs:simpleType name="cincuentaCaracteres"> <!-- Tipo para restringir el titulo en 50 caracteres maximo-->
+  <xs:simpleType name="cincuentaCaracteres"> <!-- Tipo para restringir el titulo en 50 caracteres
+    maximo-->
     <xs:restriction base="xs:string">
       <xs:maxLength value="50" />
     </xs:restriction>
