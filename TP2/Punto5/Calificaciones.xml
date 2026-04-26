@@ -62,4 +62,10 @@
         <carrera>AdeS</carrera>
         <nota>100</nota>
     </alumno>
+    <alumno tipo="no recursante">
+        <nombre>Lionel Garcia</nombre>
+        <materia>Laboratorio de programación</materia>
+        <carrera>AdeS</carrera>
+        <nota>50</nota>
+    </alumno>
 </calificaciones>

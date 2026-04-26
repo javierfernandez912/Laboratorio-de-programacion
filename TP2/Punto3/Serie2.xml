@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Serie.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<serie cod="A01" titulo="Breaking bad" genero="drama">
+    <personajes>
+        <personaje id="1" tipo="principal">
+            <nombre>Walter White</nombre>
+            <genero>M</genero>
+            <descripcion>Protagonista brillante, profesor de química convertido en fabricante de drogas.</descripcion>
+        </personaje>
+        <personaje id="2" tipo="principal">
+            <nombre>Jesse Pinkman</nombre>
+            <genero>M</genero>
+            <descripcion>Exalumno de Walt, socio renuente, más empático pero atrapado en el crimen.</descripcion>
+        </personaje>
+        <personaje id="3" tipo="secundario">
+            <nombre>Skyler White</nombre>
+            <genero>F</genero>
+            <descripcion>Esposa de Walter, quien lidia con los secretos y cambios de actitud de su marido.</descripcion>
+        </personaje>
+        <personaje id="4" tipo="secundario">
+            <nombre>Hank Schrader</nombre>
+            <genero>M</genero>
+            <descripcion>Agente de la DEA y cuñado de Walt, obsesionado con atrapar a Heisenberg.</descripcion>
+        </personaje>
+        <personaje id="5" tipo="secundario">
+            <nombre>Saul Goodman</nombre>
+            <genero>M</genero>
+            <descripcion>Abogado astuto que ayuda a la pareja a blanquear dinero y gestionar problemas legales.</descripcion>
+        </personaje>
+    </personajes>
+
+    <trama>
+        Breaking Bad es una aclamada serie de drama criminal que narra cómo Walter White, un profesor de química diagnosticado con cáncer terminal, se convierte en un despiadado productor de metanfetamina (bajo el alias "Heisenberg") junto a su exalumno Jesse Pinkman, degenerando en un mundo de violencia y crimen para asegurar el futuro financiero de su familia. 
+    </trama>
+
+    <hashtag nombre="breakingbad"></hashtag>
+    <hashtag nombre="walterwhite"></hashtag>
+    <hashtag nombre="heisenberg "></hashtag>
+
+
+</serie>

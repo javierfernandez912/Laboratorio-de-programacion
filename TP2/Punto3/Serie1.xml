@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Serie.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<serie cod="A00" titulo="Peaky Blinders" genero="drama">
+    <personajes>
+        <personaje id="1">
+            <nombre>Tommy Shelby</nombre>
+            <genero>M</genero>
+            <descripcion>Líder de la banda, veterano de guerra, inteligente, calculador y a menudo despiadado.</descripcion>
+        </personaje>
+        <personaje id="2" tipo="principal">
+            <nombre>Arthur Shelby</nombre>
+            <genero>M</genero>
+            <descripcion>El hermano mayor, impulsivo, violento y la mano derecha de Tommy.</descripcion>
+        </personaje>
+        <personaje id="3" tipo="secundario">
+            <nombre>Polly Gray</nombre>
+            <genero>F</genero>
+            <descripcion>Tía de los hermanos Shelby, matriarca de la familia, gestiona el negocio mientras ellos estaban en la guerra.</descripcion>
+        </personaje>
+        <personaje id="4" tipo="secundario">
+            <nombre>Ada Thorne</nombre>
+            <genero>F</genero>
+            <descripcion>Hermana Shelby, trata de mantenerse alejada de los negocios sucios, manteniendo una postura política independiente.</descripcion>
+        </personaje>
+        <personaje id="5" tipo="reparto">
+            <nombre>John Shelby</nombre>
+            <genero>M</genero>
+            <descripcion>Hermano menor, ambicioso y práctico en los negocios.</descripcion>
+        </personaje>
+    </personajes>
+
+    <trama>
+        La trama sigue a la ambiciosa familia Shelby, una banda de gánsteres liderada por Tommy Shelby, que utiliza la violencia, apuestas ilegales y la astucia para escalar desde los barrios bajos hasta el poder político y económico, enfrentando rivales internos y externos
+    </trama>
+
+    <hashtag nombre="peakyblinders"></hashtag>
+    <hashtag nombre="tommyshelby"></hashtag>
+    <hashtag nombre="gangsters"></hashtag>
+
+
+</serie>

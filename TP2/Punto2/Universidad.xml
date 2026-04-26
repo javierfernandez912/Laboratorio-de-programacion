@@ -4,14 +4,14 @@
     <nombre>Universidad Nacional de la Patagonia Austral</nombre>
     <pais>Argentina</pais>
     <provincia>Santa Cruz</provincia>
-    <ciudad>Río Gallegos</ciudad>
+    <ciudad>Rio Gallegos</ciudad>
 
     <carreras>
         <carrera id="101">
             <nombre>Analista de Sistemas</nombre>
             <duracion>3 años</duracion>
             <cantidadHoras>1800</cantidadHoras>
-            <materias>25</materias>
+            <materias>22</materias>
         </carrera>
     </carreras>
 
@@ -20,8 +20,8 @@
             <nombre>Programación Orientada a Objetos</nombre>
             <añoCarrera>2</añoCarrera>
             <cuatrimestre>1er</cuatrimestre>
-            <totalHorasTeoricas>40</totalHorasTeoricas>
-            <totalHorasPracticas>40</totalHorasPracticas>
+            <totalHorasTeoricas>30</totalHorasTeoricas>
+            <totalHorasPracticas>60</totalHorasPracticas>
         </asignatura>
     </asignaturas>
 
