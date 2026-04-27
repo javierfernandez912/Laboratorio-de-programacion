@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<informe_promedios>
+    <alumno nombre="Luis Gomez">60.0</alumno>
+    <alumno nombre="Maria Lopez">35.0</alumno>
+    <alumno nombre="Juan Perez">72.5</alumno>
+    <alumno nombre="Carlos Valderrama">71.0</alumno>
+    <alumno nombre="Geronimo Gutierrez">70.0</alumno>
+    <alumno nombre="Claudio Lopez">20.0</alumno>
+    <alumno nombre="Cristian Orlando">75.0</alumno>
+    <alumno nombre="Lionel Garcia">75.0</alumno>
+    <promedio_total>60.09090909090909</promedio_total>
+</informe_promedios>
