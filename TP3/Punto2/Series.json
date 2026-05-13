@@ -1,0 +1,138 @@
+{
+    "series": [
+        {
+            "id": 1,
+            "titulo": "Breaking Bad",
+            "creador": "Vince Gilligan",
+            "año de lanzamiento": 2008,
+            "cantidad de temporadas": 5,
+            "episodios": [
+                7,
+                13,
+                13,
+                13,
+                16
+            ],
+            "actores principales": [
+                "Bryan Cranston",
+                "Aaron Paul",
+                "Anna Gunn"
+            ],
+            "generos": [
+                "Comedia Oscura",
+                "Crimen y Drogas",
+                "Drama Psicologico",
+                "Suspenso Psicologico",
+                "Tragedia"
+            ],
+            "estado": "finalizada",
+            "calificación": 9.5
+        },
+        {
+            "id": 2,
+            "titulo": "Chernobyl",
+            "creador": "Craig Mazin",
+            "año de lanzamiento": 2019,
+            "cantidad de temporadas": 1,
+            "episodios": [
+                5
+            ],
+            "actores principales": [
+                "Jared Harris",
+                "Jessie Buckley",
+                "Stellan Skarsgard"
+            ],
+            "generos": [
+                "Desastre",
+                "Docudrama",
+                "Drama de Época",
+                "Drama Psicologico",
+                "Épica"
+            ],
+            "estado": "finalizada",
+            "calificación": 9.3
+        },
+        {
+            "id": 3,
+            "titulo": "The Wire",
+            "creador": "David Simon",
+            "año de lanzamiento": 2002,
+            "cantidad de temporadas": 5,
+            "episodios": [
+                13,
+                12,
+                12,
+                13,
+                10
+            ],
+            "actores principales": [
+                "Dominic West",
+                "Lance Reddick",
+                "Sonja Sohn"
+            ],
+            "generos": [
+                "Crimen y Drogas",
+                "Drama de Policia",
+                "Drama Psicologico"
+            ],
+            "estado": "finalizada",
+            "calificación": 9.3
+        },
+        {
+            "id": 3,
+            "titulo": "Game of Thrones",
+            "creador": "David Benioff",
+            "año de lanzamiento": 2011,
+            "cantidad de temporadas": 8,
+            "episodios": [
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                7,
+                6
+            ],
+            "actores principales": [
+                "Emilia Clarke",
+                "Peter Dinklage",
+                "Kit Harrington"
+            ],
+            "generos": [
+                "Accion Épica",
+                "Aventura Épica",
+                "Drama Psicologico",
+                "Épica"
+            ],
+            "estado": "finalizada",
+            "calificación": 9.2
+        },
+        {
+            "id": 4,
+            "titulo": "Bluey",
+            "creador": "Joe Brumm",
+            "año de lanzamiento": 2002,
+            "cantidad de temporadas": 5,
+            "episodios": [
+                13,
+                12,
+                12,
+                13,
+                10
+            ],
+            "actores principales": [
+                "Dominic West",
+                "Lance Reddick",
+                "Sonja Sohn"
+            ],
+            "generos": [
+                "Crimen y Drogas",
+                "Drama de Policia",
+                "Drama Psicologico"
+            ],
+            "estado": "finalizada",
+            "calificación": 9.3
+        }
+    ]
+}
