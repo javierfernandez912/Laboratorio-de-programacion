@@ -79,7 +79,7 @@
             "calificación": 9.3
         },
         {
-            "id": 3,
+            "id": 4,
             "titulo": "Game of Thrones",
             "creador": "David Benioff",
             "año de lanzamiento": 2011,
@@ -109,30 +109,88 @@
             "calificación": 9.2
         },
         {
-            "id": 4,
+            "id": 5,
             "titulo": "Bluey",
             "creador": "Joe Brumm",
-            "año de lanzamiento": 2002,
-            "cantidad de temporadas": 5,
+            "año de lanzamiento": 2018,
+            "cantidad de temporadas": 4,
             "episodios": [
-                13,
-                12,
-                12,
-                13,
-                10
+                52,
+                52,
+                50,
+                20
             ],
             "actores principales": [
-                "Dominic West",
-                "Lance Reddick",
-                "Sonja Sohn"
+                "David McCormack",
+                "Melanie Zanetti",
+                "Brad Elliott"
             ],
             "generos": [
+                "Animación dibujada a mano",
+                "Aventura animal",
+                "Animación",
+                "Familia"
+            ],
+            "estado": "en emisión",
+            "calificación": 9.3
+        },
+        {
+            "id": 6,
+            "titulo": "Better Call Saul",
+            "creador": "Vince Gilligan",
+            "año de lanzamiento": 2015,
+            "cantidad de temporadas": 6,
+            "episodios": [
+                10,
+                10,
+                10,
+                10,
+                10,
+                13
+            ],
+            "actores principales": [
+                "Bob Odenkirk",
+                "Rhea Seehorn",
+                "Jonathan Banks"
+            ],
+            "generos": [
+                "Comedia Oscura",
                 "Crimen y Drogas",
-                "Drama de Policia",
+                "Drama Juridico",
                 "Drama Psicologico"
             ],
             "estado": "finalizada",
-            "calificación": 9.3
+            "calificación": 9.0
+        },
+        {
+            "id": 7,
+            "titulo": "The Office",
+            "creador": "Greg Daniels",
+            "año de lanzamiento": 2005,
+            "cantidad de temporadas": 9,
+            "episodios": [
+                6,
+                22,
+                23,
+                14,
+                26,
+                26,
+                27,
+                24,
+                23
+            ],
+            "actores principales": [
+                "Steve Carell",
+                "Jenna Fischer",
+                "John Krasinski"
+            ],
+            "generos": [
+                "Comedias de Situación",
+                "Falso documental",
+                "Comedia"
+            ],
+            "estado": "finalizada",
+            "calificación": 9.0
         }
     ]
 }
