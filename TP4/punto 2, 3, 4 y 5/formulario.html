@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Formulario Expedientes</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="#" id="formulario_expedientes" novalidate>
+        <!--Para hacer el punto 4, no validate ignora todos los required, y la validacion la hace solamente el .js-->
+        <h2>Datos del expediente</h2>
+        Número de expediente:
+        <input type="text" id="numero_expediente" name="numero_expediente" required placeholder="0000"
+            title="El formato debe ser 0000 (4 números)">
+        <br>
+        Area:
+        <select id="area" name="area">
+            <option value="mesa_entrada">Mesa de entrada</option>
+            <option value="juridico">Jurídico</option>
+            <option value="informatica">Informática</option>
+            <option value="administracion">Administración</option>
+        </select>
+        <br>
+        Tipo de tramite:
+        <select id="tipo_tramite" name="tipo_tramite">
+            <option value="urgente">Urgente</option>
+            <option value="normal" selected>Normal</option>
+            <option value="bajo">Bajo</option>
+        </select>
+        <br>
+        <h2>Datos de gestión</h2>
+        Cantidad de días en tramite:
+        <input type="number" id="dias_tramite" name="dias_tramite" required min="1" placeholder="1">
+        <br>
+        Estado:
+        <br>
+        <input type="radio" id="estadoPendiente" name="estado" value="pendiente">
+        <label for="estadoPendiente">Pendiente</label><br>
+
+        <input type="radio" id="estadoProceso" name="estado" value="en_proceso">
+        <label for="estadoProceso">En proceso</label><br>
+
+        <input type="radio" id="estadoFinalizado" name="estado" value="finalizado">
+        <label for="estadoFinalizado">Finalizado</label>
+        <br>
+        Responsable:
+        <input type="text" id="responsable" name="responsable" required placeholder="Nombre del responsable">
+        <br>
+        Cantidad de expedientes gestionados hoy:
+        <input type="number" id="cantidad_expedientes" name="cantidad_expedientes" required min="0" placeholder="0">
+        <br>
+        Horas trabajadas:
+        <input type="number" id="horas_trabajadas" name="horas_trabajadas" required min="1" max="12"
+            placeholder="Número entre 1 y 12">
+        <br>
+        <br>
+        <div id="contenedor_errores"></div>
+        <input type="submit" value="Validar expediente">
+        <br>
+        <br>
+        <input type="button" id="boton_estadistica" value="Calcular estadistica">
+        <div id="div_estadistica"></div>
+        <br>
+        <button type="button" id="boton_json">Generar JSON</button>
+        <pre id="resultado_json"></pre>
+        <br>
+        <input type="reset" value="Limpiar">
+    </form>
+    <script src="validacion.js"></script>
+</body>
+
+</html>

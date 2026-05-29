@@ -1,0 +1,60 @@
+body {
+    background-color: #fdfdfd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+h2 {
+    color: darkblue;
+    font-size: 250%;
+}
+
+p {
+    font-size: 20px;
+}
+
+aside p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: darkslategrey;
+}
+
+a:hover {
+    color: black;
+}
+
+#inicio img {
+    display: block;
+    margin: auto;
+}
+
+#datosPersonales img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: -10px;
+    transform: rotate(-3deg);
+}
+
+#datosPersonales dt {
+    font-weight: bold;
+    text-align: left;
+}
+
+#datosPersonales dd {
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+#formacion p {
+    font-weight: bold;
+}
+
+#experiencia p {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
