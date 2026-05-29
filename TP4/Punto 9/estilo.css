@@ -4,7 +4,7 @@ h1, h3, nav a{
 .contenedor_principal p{
     font-family: serif;
 }
-header,.contenedor_principal, .contenedor_principal .entrada_blog, .contenedor_principal .articulo, footer, nav, aside{
+header,.contenedor_principal, .contenedor_principal .articulo, footer, nav, aside{
     padding: 15px;
 }
 header{
