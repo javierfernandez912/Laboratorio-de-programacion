@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.List;
 
 public class BibliotecaParser {
-    private static final String FILE_NAME = "librosdig.json";
+    private static final String FILE_NAME = "TP3/punto5/src/main/java/com/punto5/librosdig.json";
 
     // a, b, f) crear json, guardar archivo y guardar cambios
     public static void guardarDatos(List<LibroDig> libros, List<Genero> generos) {
